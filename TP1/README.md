@@ -39,11 +39,9 @@ Before getting started, make sure you have the following prerequisites installed
    ```bash
    bin/kafka-server-start.sh config/server.properties
    ```
-
-![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/51e7b1b7-fd96-41d8-a77b-32718865919a)
+  ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/51e7b1b7-fd96-41d8-a77b-32718865919a)
 
 5. **Test Kafka:** Use `kafka-console-producer.sh` and `kafka-console-consumer.sh` to test Kafka's functionality.
-
   ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/efbf9026-4717-43ed-9f50-b6a58a138af7)
 
 ### Option 2: Docker Setup
