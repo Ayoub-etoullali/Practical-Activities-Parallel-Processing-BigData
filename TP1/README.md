@@ -33,4 +33,4 @@ Before getting started, make sure you have the following prerequisites installed
    ```bash
    bin/zookeeper-server-start.sh config/zookeeper.properties
 
-<kbd>Ayoub ETOULLALI</kbd>
+<kbd>Ayoub ETOULLALI</kbd> 👨‍💻
