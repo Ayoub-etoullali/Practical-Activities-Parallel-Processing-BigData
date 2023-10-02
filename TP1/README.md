@@ -32,8 +32,7 @@ Before getting started, make sure you have the following prerequisites installed
 
    ```bash
    bin/zookeeper-server-start.sh config/zookeeper.properties
-   
-![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/0bfc85f9-7b54-4e39-9246-ec83184049b9)
+  ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/0bfc85f9-7b54-4e39-9246-ec83184049b9)
 
 3. **Start Kafka Server:** Start the Kafka server with the following command:
 
@@ -41,11 +40,11 @@ Before getting started, make sure you have the following prerequisites installed
    bin/kafka-server-start.sh config/server.properties
    ```
 
-   ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/51e7b1b7-fd96-41d8-a77b-32718865919a)
+![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/51e7b1b7-fd96-41d8-a77b-32718865919a)
 
-4. **Test Kafka:** Use `kafka-console-producer.sh` and `kafka-console-consumer.sh` to test Kafka's functionality.
+5. **Test Kafka:** Use `kafka-console-producer.sh` and `kafka-console-consumer.sh` to test Kafka's functionality.
 
-![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/efbf9026-4717-43ed-9f50-b6a58a138af7)
+  ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/efbf9026-4717-43ed-9f50-b6a58a138af7)
 
 ### Option 2: Docker Setup
 
