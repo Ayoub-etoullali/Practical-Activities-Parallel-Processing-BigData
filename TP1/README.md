@@ -42,8 +42,8 @@ Before getting started, make sure you have the following prerequisites installed
   ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/51e7b1b7-fd96-41d8-a77b-32718865919a)
 
 5. **Test Kafka:** Use `kafka-console-producer.sh` and `kafka-console-consumer.sh` to test Kafka's functionality.
-   
-  ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/efbf9026-4717-43ed-9f50-b6a58a138af7)
+
+  ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/396de206-b1b5-436f-a7a7-a87d55a651e1)
 
 ### Option 2: Docker Setup
 
