@@ -1,0 +1,31 @@
+	(1) Start Zookeeper
+cd C:\kafka
+start bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+
+	(2) Start Kafka Server
+start bin\windows\kafka-server-start.bat config\server.properties
+
+	(3) Création d'un Topic Consumer/Producer
+start bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic R1
+start bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic R1
+
+	(3) Création d'un Topic
+bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
+		=> Created topic test.
+bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+		=> test
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+	(1) Start Zookeeper
+cd Apps/kafka
+bin/zookeeper-server-start.sh config/zookeeper.properties (./gradlew jar -PscalaVersion=2.13.10)
+
+	(2) Start Kafka Server
+bin/kafka-server-start.sh config/server.properties
+
+	(3) Création d'un Topic
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test 
+		=> Created topic test.
+bin/kafka-topics.sh --list --zookeeper localhost:2181
+		=> test
