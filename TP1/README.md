@@ -49,30 +49,48 @@ Before getting started, make sure you have the following prerequisites installed
 
 1. **Create `docker-compose.yml`:** Create a `docker-compose.yml` file based on the [Docker Compose example](https://developer.confluent.io/quickstart/kafka-docker/).
 
+![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/07d5907e-5121-45f3-af42-c2b91f077eab)
+
 2. **Start Docker Containers:** Run the following command to start Kafka and ZooKeeper containers:
 
    ```bash
-   docker-compose up
+   docker-compose up -d
    ```
+![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/25c80ed3-0a29-4bb5-8112-b4dfba4a804c)
 
 3. **Test Kafka:** Use `kafka-console-producer` and `kafka-console-consumer` as described above to test Kafka.
 
+![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/d0434549-76a0-4853-b926-cb6f8f042028)
+
 ## Developing Kafka Services
 
-In this section, you can describe how to create Kafka producers, consumers, and stream processors using Spring Cloud Streams. Provide links to relevant documentation or code examples.
+In this section, we describe how to create Kafka producers, consumers, and stream processors using Spring Cloud Streams.
 
+1. Un Service Producer KAFKA via un Rest Controler
+
+   ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/be82e73e-f81b-4cc7-a449-270e87fc7a71)
+
+3. Un Service Consumer KAFKA
+
+   ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/ae8092fa-adb1-43e0-80e6-82cb00a7a319)
+
+5. Un Service Supplier KAFKA
+
+   ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/5cec7638-82d0-4938-9beb-e2cd59ea3365)
+
+7. Un Service de Data Analytics Real Time Stream Processing avec Kaflka Streams
+
+   
+9. Une application Web qui permet d'afficher les résultats du Stream Data Analytics en temps réel
+   
 ## Running the Services
+how to run the Kafka services you've developed, including any required configurations and dependencies :
 
-Explain how to run the Kafka services you've developed, including any required configurations and dependencies.
-
-## Contributing
-
-If you would like to contribute to this project, please open an issue or create a pull request with your proposed changes.
+![dependencies](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/b34df68e-d8ef-47a1-b54c-89a36d046bbf)
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 ```
 
-Feel free to modify and expand this template to provide detailed instructions for your specific Kafka setup and services. You can add information about how to configure Kafka topics, Spring Boot applications, and any other relevant details.
 <kbd>Ayoub ETOULLALI</kbd> 👨‍💻
