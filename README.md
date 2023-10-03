@@ -2,10 +2,10 @@
 ![](png)
 
 ## TPs
-  <a href="">
+  <a href="https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/tree/main/TP1">
     (1) Event Driven Architecture 
   </a> <br>
-  <a href="">
+  <a href="https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/tree/main/TP2">
     (2) Micro-services architectures with Spring cloud
   </a> <br> <br>
 
