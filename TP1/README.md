@@ -91,6 +91,5 @@ how to run the Kafka services you've developed, including any required configura
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
 
 <kbd>Ayoub ETOULLALI</kbd> 👨‍💻
