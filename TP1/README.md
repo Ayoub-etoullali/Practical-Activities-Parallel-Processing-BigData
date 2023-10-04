@@ -10,7 +10,6 @@ This repository provides a basic setup for Apache Kafka to implement an Event-Dr
   - [Option 2: Docker Setup](#option-2-docker-setup)
 - [Developing Kafka Services](#developing-kafka-services)
 - [Running the Services](#running-the-services)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Prerequisites
