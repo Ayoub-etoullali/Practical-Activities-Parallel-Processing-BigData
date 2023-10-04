@@ -7,9 +7,9 @@ Ce dépôt contient une mise en œuvre d'une architecture de microservices avec 
 - [Prérequis](#prérequis)
 - [Description du Projet](#description-du-projet)
 - [Configuration et Exécution](#configuration-et-exécution)
-- [Première partie](#Première partie)
-- [Deuxième partie](#Deuxième partie)
-- [Troisième partie](#Troisième partie)
+- [Première partie](#Première-partie)
+- [Deuxième partie](#Deuxième-partie)
+- [Troisième partie](#Troisième-partie)
 - [Licence](#licence)
 
 ## Prérequis
