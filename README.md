@@ -1,5 +1,5 @@
 # Practical Activities 👨🏻‍💻
-![](png)
+![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/151f782c-fbf9-4912-a203-fa3f91717c91)
 
 ## TPs
   <a href="https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/tree/main/TP1">
