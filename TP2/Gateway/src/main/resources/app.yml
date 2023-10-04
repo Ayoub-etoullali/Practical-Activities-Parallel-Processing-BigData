@@ -11,7 +11,7 @@ spring:
           predicates:
             - Path= /products/**
     discovery:
-      enabled: false
+      enabled: true
 
 server:
   port: 8083
