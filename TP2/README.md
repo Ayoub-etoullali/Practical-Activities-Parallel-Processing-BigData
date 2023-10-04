@@ -1,4 +1,6 @@
 
+https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/050882aa-8645-4db4-8b1b-4528165eb9d7
+
 https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/2b345c08-dfe2-4bcd-bccd-1513d243967f
 # Architecture de Microservices avec Spring Cloud
 
@@ -42,6 +44,8 @@ Suivez ces étapes pour configurer et exécuter les composants de l'architecture
 
 ## Première partie
   -> Customer-Service, Inventory-Service, Spring Cloud Gateway, Eureka Discovery
+
+  Uploading 2023-10-04 18-39-55.mp4…
 
 ## Deuxième  partie
   -> Billing Service avec Open Feign Rest Client
