@@ -46,6 +46,8 @@ Suivez ces étapes pour configurer et exécuter les composants de l'architecture
 ## Deuxième  partie
   -> Billing Service avec Open Feign Rest Client
 
+https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/89c5855a-613e-4b3a-8275-cf6c2b2a9abd
+
 ## Troisième partie
   ->  Créer un Client Angular
   
