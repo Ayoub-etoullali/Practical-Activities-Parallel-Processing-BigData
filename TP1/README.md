@@ -69,19 +69,21 @@ In this section, we describe how to create Kafka producers, consumers, and strea
 
    ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/be82e73e-f81b-4cc7-a449-270e87fc7a71)
 
-3. Un Service Consumer KAFKA
+2. Un Service Consumer KAFKA
 
    ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/ae8092fa-adb1-43e0-80e6-82cb00a7a319)
 
-5. Un Service Supplier KAFKA
+3. Un Service Supplier KAFKA
 
    ![image](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/5cec7638-82d0-4938-9beb-e2cd59ea3365)
 
-7. Un Service de Data Analytics Real Time Stream Processing avec Kaflka Streams
+4. Un Service de Data Analytics Real Time Stream Processing avec Kaflka Streams
+5. Une application Web qui permet d'afficher les résultats du Stream Data Analytics en temps réel
 
-   
-9. Une application Web qui permet d'afficher les résultats du Stream Data Analytics en temps réel
-   
+  ### DEMO :
+
+https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/2d3b796a-5d0c-4ea6-8ec8-ca6efb04eb42
+
 ## Running the Services
 how to run the Kafka services you've developed, including any required configurations and dependencies :
 
