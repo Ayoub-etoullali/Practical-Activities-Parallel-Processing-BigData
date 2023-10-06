@@ -6,6 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 
 import java.util.stream.Stream;
 
@@ -17,7 +18,10 @@ public class CustomerServiceApplication {
     }
 
     @Bean
-    CommandLineRunner start(CustomerRepository customerRepository){
+    CommandLineRunner start(CustomerRepository customerRepository,
+                            RepositoryRestConfiguration repositoryRestConfiguration
+                            ){
+        repositoryRestConfiguration.exposeIdsFor(Customer.class);
         return args->{
 
             Stream.of("ayoub", "hayat", "karima", "ihssan", "mustapha", "radouan", "samira").forEach(name -> {

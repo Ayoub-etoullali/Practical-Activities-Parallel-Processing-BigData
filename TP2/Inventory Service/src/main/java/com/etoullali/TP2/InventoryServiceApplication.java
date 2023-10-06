@@ -1,6 +1,5 @@
 package com.etoullali.TP2;
 
-import ch.qos.logback.core.testUtil.RandomUtil;
 import com.etoullali.TP2.entities.Product;
 import com.etoullali.TP2.repositories.ProductRepository;
 import org.apache.commons.lang.math.RandomUtils;
@@ -8,8 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 
-import java.util.Random;
 import java.util.stream.Stream;
 
 @SpringBootApplication
@@ -20,7 +19,10 @@ public class InventoryServiceApplication {
     }
 
     @Bean
-    CommandLineRunner start(ProductRepository productRepository) {
+    CommandLineRunner start(ProductRepository productRepository,
+                            RepositoryRestConfiguration repositoryRestConfiguration
+    ){
+        repositoryRestConfiguration.exposeIdsFor(Product.class);
         return args -> {
 
             Stream.of("Imprimante", "Ordinateur", "Smartphone").forEach(p -> {
