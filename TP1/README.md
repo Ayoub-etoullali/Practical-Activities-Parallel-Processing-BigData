@@ -89,7 +89,5 @@ how to run the Kafka services you've developed, including any required configura
 
 ![dependencies](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/b34df68e-d8ef-47a1-b54c-89a36d046bbf)
 
-## License
-This project is licensed under the [MIT License](LICENSE).
-
+## Auteur
 <kbd>Ayoub ETOULLALI</kbd> 👨‍💻
