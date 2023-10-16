@@ -1,57 +1,61 @@
-# Architecture de Microservices avec Spring Cloud
+# Projet de Gestion Bancaire avec Microservices
 
-Ce dépôt contient une mise en œuvre d'une architecture de microservices avec Spring Cloud, développée dans le cadre de l'activité pratique. Vous trouverez ci-dessous des instructions pour configurer, exécuter et explorer les différents composants de l'architecture.
+Ce projet est une application de gestion bancaire qui utilise une architecture à microservices pour gérer les clients et les comptes bancaires, avec un service de découverte, une passerelle et un service de configuration.
 
-## Table des matières
+## Microservices
 
-- [Prérequis](#prérequis)
-- [Description du Projet](#description-du-projet)
-- [Configuration et Exécution](#configuration-et-exécution)
-- [Première partie](#première-partie)
-- [Deuxième partie](#deuxième-partie)
-- [Troisième partie](#troisième-partie)
-- [Licence](#licence)
+### 1. Customer Service
 
-## Prérequis
+- Gère les clients de la banque.
+- Fournit des opérations pour créer, consulter et modifier les clients.
+- Communique avec la base de données pour stocker les informations des clients.
 
-Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur votre machine :
+### 2. Account Service
 
-- [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
-- [Maven](https://maven.apache.org/download.cgi)
-- [Node.js](https://nodejs.org/en/download/)
-- [Angular CLI](https://cli.angular.io/)
-- [Docker](https://docs.docker.com/get-docker/) (optionnel)
+- Gère les comptes bancaires.
+- Propriétés d'un compte : identifiant, date de création, type (CURRENT_ACCOUNT ou SAVING_ACCOUNT), statut (CREATED, ACTIVATED, SUSPENDED, BLOCKED), client auquel le compte appartient.
+- Fournit des opérations de création, consultation, modification, débit, crédit et transfert de montant.
+- Enregistre l'historique des transactions pour chaque compte.
 
-## Description du Projet
+### 3. Discovery Service
 
-Ce projet implémente une architecture de microservices à l'aide de Spring Cloud. Il comprend plusieurs services, un service de passerelle Spring Cloud Gateway, la découverte de services avec Eureka, et un service de facturation intégré à l'aide de OpenFeign. L'objectif est de comprendre comment développer et déployer une architecture de microservices moderne.
+- Utilise Eureka Server pour la découverte des microservices.
+- Permet aux microservices de s'enregistrer et de découvrir les autres services disponibles dans le système.
 
-## Configuration et Exécution
+### 4. Gateway Service
 
-Suivez ces étapes pour configurer et exécuter les composants de l'architecture :
+- Utilise Spring Cloud Gateway pour acheminer les requêtes vers les microservices appropriés en fonction des URI.
+- Gère la sécurité, l'authentification, l'autorisation et d'autres aspects de la gestion des demandes.
 
-- **Configuration des services :** Consultez le code source de chaque service pour comprendre les configurations nécessaires.
+### 5. Service de Configuration
 
-- **Construction et exécution des services :** Utilisez Maven pour construire et exécuter chaque service individuellement.
+- Gère les configurations de tous les microservices de manière centralisée.
+- Utilise Spring Cloud Config Server pour la gestion centralisée des configurations.
 
-- **Exécution avec Docker (optionnel) :** Si vous préférez, utilisez Docker pour exécuter les services et simplifier le déploiement.
+## Configuration
 
-- **Démarrage de Spring Cloud Gateway et Eureka :** Assurez-vous de démarrer la passerelle Spring Cloud Gateway et le service de découverte Eureka pour gérer les requêtes et la découverte de services.
+- Vous devez configurer correctement les bases de données pour chaque microservice, ainsi que les paramètres de sécurité et d'authentification.
+- Assurez-vous que les microservices s'enregistrent auprès du service Discovery (Eureka) et sont accessibles via la passerelle.
 
-## Première partie
-  -> Customer-Service, Inventory-Service, Spring Cloud Gateway, Eureka Discovery
-  
-  https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/2b345c08-dfe2-4bcd-bccd-1513d243967f
+## Installation et Exécution
 
-## Deuxième  partie
-  -> Billing Service avec Open Feign Rest Client
+1. Clonez ce dépôt.
 
-https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/89c5855a-613e-4b3a-8275-cf6c2b2a9abd
+2. Configurez chaque microservice (Customer Service, Account Service) avec les détails de la base de données et d'autres configurations requises.
 
-## Troisième partie
-  ->  Créer un Client Angular
-  
-## License
-This project is licensed under the [MIT License](LICENSE).
+3. Démarrez le service Discovery (Eureka).
 
+4. Démarrez la Gateway Service (Spring Cloud Gateway).
+
+5. Déployez les microservices (Customer Service, Account Service).
+
+6. Testez le système en effectuant des appels aux API exposées par les microservices via la passerelle.
+
+## Contributions
+
+Les contributions sont les bienvenues. N'hésitez pas à ouvrir des issues et à soumettre des pull requests.
+
+### DEMO :
+
+## Auteur
 <kbd>Ayoub ETOULLALI</kbd> 👨‍💻
