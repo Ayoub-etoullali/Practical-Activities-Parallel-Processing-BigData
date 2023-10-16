@@ -55,7 +55,7 @@ Ce projet est une application de gestion bancaire qui utilise une architecture �
 
 Les contributions sont les bienvenues. N'hésitez pas à ouvrir des issues et à soumettre des pull requests.
 
-### DEMO :
+## DEMO
 
 ## Auteur
 <kbd>Ayoub ETOULLALI</kbd> 👨‍💻
