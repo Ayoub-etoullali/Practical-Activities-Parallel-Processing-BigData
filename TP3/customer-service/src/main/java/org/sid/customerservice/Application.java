@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Bean;
 import java.util.List;
 
 @SpringBootApplication
-public class CustomerServiceApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CustomerServiceApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 	@Bean
 	CommandLineRunner start(CustomerRepository customerRepository){

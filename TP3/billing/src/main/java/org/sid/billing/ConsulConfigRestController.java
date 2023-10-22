@@ -10,16 +10,30 @@ import java.util.Map;
 
 @RestController
 public class ConsulConfigRestController {
+
+    //=> with dependency Vault
     @Autowired
     private MyConsulConfig myConsulConfig;
     @Autowired
     private MyVaultConfig myVaultConfig;
-    //@Value("${token.accessTokenTimeout}")
-    //private long accessTokenTimeout;
-    //@Value("${token.refreshTokenTimeout}")
-    //private long refreshTokenTimeout;
+
+    //=> without dependency Vault
+    /*
+    @Value("${token.accessTokenTimeout}")
+    private long accessTokenTimeout;
+    @Value("${token.refreshTokenTimeout}")
+    private long refreshTokenTimeout;
+     */
+
     @GetMapping("/myConfig")
     public Map<String,Object> myConfig(){
         return Map.of("consulConfig",myConsulConfig, "vaultConfig",myVaultConfig);
     }
+
+    //=> other Methods
+    /*
+    public MyConsulConfig myConfig(){
+        return myConsulConfig;
+    }
+     */
 }

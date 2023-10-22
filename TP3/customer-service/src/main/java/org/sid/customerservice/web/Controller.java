@@ -9,7 +9,7 @@ import java.util.Map;
 
 @RestController
 @RefreshScope
-public class CustomerConfigTestController {
+public class Controller {
     @Value("${global.params.p1}")
     private String p1;
     @Value("${global.params.p2}")

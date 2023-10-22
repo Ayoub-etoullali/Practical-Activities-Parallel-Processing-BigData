@@ -20,8 +20,11 @@ public class BillingApplication {
 	@Bean
 	CommandLineRunner commandLineRunner(){
 		return args -> {
+			//Ajouter un secret <keypair>
 			vaultTemplate.opsForVersionedKeyValue("secret")
-					.put("keypair", Map.of("privKey","54321","pubKey","8999"));
+					.put("keypair",
+							Map.of("privKey","54321",
+									"pubKey","8999"));
 		};
 	};
 

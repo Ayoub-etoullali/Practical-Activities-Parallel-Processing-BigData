@@ -1,6 +1,16 @@
 spring:
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
       routes:
         - id: r1
           uri: http://localhost:8081/
@@ -10,18 +20,7 @@ spring:
           uri : http://localhost:8082/
           predicates:
             - Path= /products/**
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "http://localhost:4200/*"
-            allowedHeaders: "*"
-            allowedMethods:
-              - GET
-              - POST
-              - PUT
-              - DELETE
-    discovery:
-      enabled: true
-
-server:
-  port: 8083
+        - id: r3
+          uri: http://localhost:8084/
+          predicates:
+            - Path = /bills/**

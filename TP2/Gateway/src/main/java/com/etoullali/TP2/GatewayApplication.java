@@ -24,6 +24,7 @@ public class GatewayApplication {
 //                .route(r->r.path("/products/**").uri("http://localhost:8082/"))
                 .route(r->r.path("/customers/**").uri("lb://CUSTOMER-SERVICE"))
                 .route(r->r.path("/products/**").uri("lb://PRODUCT-SERVICE"))
+                .route(r->r.path("/bills/**").uri("lb://BILLING-SERVICE"))
                 .build();
 
     }

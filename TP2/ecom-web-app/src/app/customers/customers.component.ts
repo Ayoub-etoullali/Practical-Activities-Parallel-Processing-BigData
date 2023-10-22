@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-customers',
@@ -7,22 +8,20 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./customers.component.css']
 })
 export class CustomersComponent implements OnInit {
-  customers: any;
+  customers :any;
+  constructor(private http:HttpClient, private router: Router) { }
 
-  constructor(private http:HttpClient) {}
-
-  ngOnInit() {
-    this.http.get("http://localhost:8083/CUSTOMER-SERVICE/customers").subscribe({
-      next : data=>{
-        this.customers=data
-      },
-      error : err => {
-
-      }
-    })
+  ngOnInit(): void {
+    this.http.get("http://localhost:8083/CUSTOMER-SERVICE/customers")
+      .subscribe({
+        next : (data)=>{
+          this.customers=data;
+        },
+        error : (err)=>{}
+      });
   }
 
-    getBills(c: any) {
-
-    }
+  getOrders(c: any) {
+    this.router.navigateByUrl("/orders/"+c.id);
+  }
 }

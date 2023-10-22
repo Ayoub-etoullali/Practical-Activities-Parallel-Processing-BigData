@@ -1,10 +1,8 @@
 <div class="container">
-  <table class="table">
+  <table class="table" *ngIf="customers">
     <thead>
     <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Email</th>
+      <th>ID</th> <th>Name</th> <th>Email</th>
     </tr>
     </thead>
     <tbody>
@@ -13,7 +11,7 @@
       <td>{{c.name}}</td>
       <td>{{c.email}}</td>
       <td>
-        <button class="btn btn-success" (click)="getBills(c)"></button>
+        <button class="btn btn-success" (click)="getOrders(c)">Orders</button>
       </td>
     </tr>
     </tbody>

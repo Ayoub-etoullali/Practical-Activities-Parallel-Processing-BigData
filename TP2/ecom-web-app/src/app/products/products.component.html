@@ -2,19 +2,16 @@
   <table class="table" *ngIf="products">
     <thead>
     <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Quantity</th>
+      <th>ID</th> <th>Name</th> <th>Price</th> <th>Quantity</th>
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let p of products._embedded.products">
-      <td>{{p.id}}</td>
-      <td>{{p.name}}</td>
-      <td>{{p.price}}</td>
-      <td>{{p.quantity}}</td>
-    </tr>
+      <tr *ngFor="let p of products._embedded.products">
+        <td>{{p.id}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.quantity}}</td>
+      </tr>
     </tbody>
   </table>
 </div>

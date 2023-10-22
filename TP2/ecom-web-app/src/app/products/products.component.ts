@@ -9,16 +9,18 @@ import {HttpClient} from "@angular/common/http";
 export class ProductsComponent implements OnInit {
   products: any;
 
-  constructor(private http:HttpClient) {}
-
-  ngOnInit() {
-    this.http.get("http://localhost:8083/PRODUCT-SERVICE/products").subscribe({
-      next : data=>{
-        this.products=data
-      },
-      error : err => {
-
-      }
-    })
+  constructor(private http: HttpClient) {
   }
+
+  ngOnInit(): void {
+    this.http.get("http://localhost:8083/PRODUCT-SERVICE/products")
+      .subscribe({
+        next: (data) => {
+          this.products = data;
+        },
+        error: (err) => {
+        }
+      });
+  }
+
 }
