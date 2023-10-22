@@ -56,6 +56,7 @@ Ce projet est une application de gestion bancaire qui utilise une architecture �
 Les contributions sont les bienvenues. N'hésitez pas à ouvrir des issues et à soumettre des pull requests.
 
 ## DEMO
+https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/09981632-a9be-4b58-9ef4-7ebcff128595
 
 ## Auteur
 <kbd>Ayoub ETOULLALI</kbd> 👨‍💻
