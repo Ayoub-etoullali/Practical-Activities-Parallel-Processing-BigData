@@ -21,6 +21,7 @@ Assurez-vous d'avoir les éléments suivants installés sur votre système :
    git clone https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/tree/main/TP3
 
 ## Structure du Projet
+![cqrs-eventsourcing-axon](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/bd8b3296-7dcc-452d-b31c-674c332d93a9)
 
 ## Démo
 
