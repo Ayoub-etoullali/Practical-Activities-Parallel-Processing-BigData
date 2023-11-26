@@ -1,27 +1,40 @@
-# Projet de Gestion de Comptes avec Axon Framework et Spring Boot
+# Sécurité des Systèmes Distribués
 
-Ce projet est une application de gestion de comptes qui met en œuvre les patterns CQRS (Command Query Responsibility Segregation) et Event Sourcing en utilisant Axon Framework avec Spring Boot.
+## Description
 
-## Table des matières
-- [Prérequis](#prérequis)
-- [Installation](#installation)
-- [Structure du Projet](#structure-du-projet)
-- [Démo](#démo-poc)
+Le projet est une application sécurisée utilisant Keycloak pour la gestion des identités et l'authentification dans un environnement de systèmes distribués.
 
 ## Prérequis
 
-Assurez-vous d'avoir les éléments suivants installés sur votre système :
-- Java
-- Maven
-- [Axon Server](https://axoniq.io/download) (pour la gestion des événements)
+- Java 8 ou version ultérieure
+- Docker (pour exécuter Keycloak dans un conteneur, facultatif)
+- PostMan (pour tester l'authentification et les tokens)
 
-## Installation
-- Clonez le dépôt :
-   ```bash
-   git clone https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/tree/main/TP3
+## Installation et Configuration
 
-## Structure du Projet
-![cqrs-eventsourcing-axon](https://github.com/Ayoub-etoullali/Practical-Activities-Parallel-Processing-BigData/assets/92756846/bd8b3296-7dcc-452d-b31c-674c332d93a9)
+1. **Téléchargement de Keycloak 19 :**
+   - [Téléchargez Keycloak 19](https://www.keycloak.org/downloads.html)
+
+2. **Démarrage de Keycloak :**
+
+3. **Création d'un compte Admin :**
+   - Suivez les étapes dans la documentation ou la vidéo ci-dessous pour créer un compte administrateur.
+
+4. **Création d'une Realm :**
+   - Créez une nouvelle Realm dans Keycloak via l'interface d'administration.
+
+5. **Création d'un client à sécuriser :**
+   - Ajoutez un nouveau client dans votre Realm.
+
+6. **Création d'utilisateurs et de rôles :**
+   - Ajoutez des utilisateurs et créez des rôles selon vos besoins.
+
+7. **Configuration avec PostMan :**
+   - Utilisez PostMan pour tester l'authentification, analyser les tokens, etc.
+
+## Partie 2 : Sécuriser les Applications
+
+- Suivez les instructions dans les vidéos ci-dessous fournies pour sécuriser les applications Products-App et Supplier-service.
 
 ## Démo
 
