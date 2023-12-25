@@ -1,0 +1,26 @@
+	Consul
+http://localhost:8500
+	
+	Config-Params (Spring CLoud)
+http://localhost:8081/params
+http://localhost:8082/params
+
+	Customer
+http://localhost:8081/customers
+http://localhost:8082/products
+
+	Config-server ()
+http://localhost:8888/customer-service/default
+http://localhost:8888/inventory-service/default
+
+	Gateway
+http://localhost:9999/customer-service/customers?projection=fullCustomer
+http://localhost:9999/order-service/orders/1
+http://localhost:9999/order-service/fullOrder/1
+http://localhost:9999/order-service/orders/search/byCustomerId?customerId=1
+
+	Config (Consul)
+http://localhost:8084/myConfig
+	
+	Vault
+http://localhost:8200

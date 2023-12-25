@@ -1,0 +1,23 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>130</x><y>110</y><w>220</w><h>140</h></coordinates><panel_attributes>_object: Conference_
+--
+id: String
+type: ConferenceType
+date: Date
+duration: int
+attendees: int
+score: int
+reviews: List&lt;Review&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>300</y><w>210</w><h>110</h></coordinates><panel_attributes>_object: Keynote_
+--
+id: String
+firstName: String
+lastName: String 
+email: String
+position: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>160</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>130</y><w>130</w><h>90</h></coordinates><panel_attributes>_object: Review_
+--
+id: String 
+date: Date
+text: String
+stars: int</panel_attributes><additional_attributes></additional_attributes></element></diagram>
